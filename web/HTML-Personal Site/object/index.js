@@ -4,10 +4,10 @@
      rooms:300,
      bookedRooms:28,
      availableRooms:function (){
-         console.log("fodas")
+         console.log("Helo")
      },
      isPool: true,
      roomsType:['Double bed','Ocean Front','Suite','Smoke Free'],
      petFriendly:false
  }
- document.getElementById("roomsAvailables").innerHTML = hotel.availableRooms();
+ document.getElementById("roomsAvailables").innerHTML = hotel.rooms;
