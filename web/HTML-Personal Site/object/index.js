@@ -2,12 +2,12 @@
  
  var hotel={
      rooms:300,
-     availableRooms:function (){
-         this.rooms - this.bookedRooms
-     },
      bookedRooms:28,
+     availableRooms:function (){
+         console.log("fodas")
+     },
      isPool: true,
      roomsType:['Double bed','Ocean Front','Suite','Smoke Free'],
      petFriendly:false
  }
-console.log(hotel.availableRooms());
+ document.getElementById("roomsAvailables").innerHTML = hotel.availableRooms();
