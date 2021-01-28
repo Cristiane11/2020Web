@@ -26,3 +26,12 @@ const layout = [
     '','','','','','','','','','','','','',
     '','','','','','','','','','','','','',
 ]
+// declare a variable to store the letter
+// innerHTML
+// style the div with a class
+
+for (let i=0; i < squares.length; i++) {
+    let letter = layout[i]
+    squares[i].innerHTML = letter
+    if (letter !== '') squares[i].classList.add('tile')
+}
