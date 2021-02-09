@@ -1,5 +1,12 @@
-var textInput = document.getElementById("inputBox").onclick = function newParagraph(){
-    textInput.innerHTML = document.getElementById("textCreated");
+
+
+var textInput = document.getElementById("inputBox")
+function newParagraph(){
+    document.getElementById("buttonClick").onclick = textInput.innerHTML;
 }
+var textCreated = newParagraph()
 
 
+
+
+    
