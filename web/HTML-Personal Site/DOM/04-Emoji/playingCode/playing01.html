@@ -7,11 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-        <h1>Practice old skills</h1>
+        <h1>Practice old skills Churchs</h1>
         <div id="chuchContainer"></div>
     <script>
-        
-        
+        const churchNames =["Foursquare", "Assemblies of God", " Canaan", "	Baptist","Apostolic Faith Church", "Calvary","Elevation Church"]
+        const chuchContainer = document.getElementById("chuchContainer");
+        for(let i=0; i<churchNames.length; i++){
+            let churchs = document.createElement("p")
+            churchs .textContent=churchNames[i];
+            chuchContainer.append(churchs)
+        }
+
     </script>
 </body>
 </html>
