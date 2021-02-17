@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Practice old skills Churchs</h1>
+        <div id="chuchContainer"></div>
+        <input type="text" id="church-input" placeholder="type Churchs Names">
+        <div class="buttons-wrapper">
+                <button id="push-btn">Add to end</button>
+            </div>
+<script>
+    const churchNames=["Foursquare", "Assemblies of God", " Canaan", "	Baptist","Apostolic Faith Church", "Calvary","Elevation Church"]
+    const churchsContainer = document.getElementById("chuchContainer");
+    function renderChurchs(){
+    for (let i=0; i<churchNames.length; i++){
+        const churchs = document.createElement("p");
+        churchs.textContent=churchNames[i]
+        churchsContainer.append(churchs)
+    }
+}
+ renderChurchs()
+
+    const pushBtn = document.getElementById(push-btn);
+        pushBtn.addEventListener("click", function(){
+        const churchInput = document.getElementById("church-input")
+        if(churchInput.value){
+        churchNames.push(churchInput.value)
+        churchInput.value = ""
+        churchsContainer.innerHTML = ""
+        renderChurchs()
+        }
+        })
+</script>
+</body>
+</html>
