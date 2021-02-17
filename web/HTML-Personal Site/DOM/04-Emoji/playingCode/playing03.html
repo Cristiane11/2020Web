@@ -16,6 +16,7 @@
 <script>
     const churchNames=["Foursquare", "Assemblies of God", " Canaan", "	Baptist","Apostolic Faith Church", "Calvary","Elevation Church"]
     const churchsContainer = document.getElementById("chuchContainer");
+    
     function renderChurchs(){
     for (let i=0; i<churchNames.length; i++){
         const churchs = document.createElement("p");
@@ -25,7 +26,7 @@
 }
  renderChurchs()
 
-    const pushBtn = document.getElementById(push-btn);
+    const pushBtn = document.getElementById("push-btn");
         pushBtn.addEventListener("click", function(){
         const churchInput = document.getElementById("church-input")
         if(churchInput.value){
